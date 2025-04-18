@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CollegeTips Photo Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="bg-gradient-to-br from-yellow-100 to-pink-200 text-gray-800">
+
+  <!-- Header -->
+  <section class="text-center py-10">
+    <h1 class="text-4xl font-bold mb-6">📸 CollegeTips Photo Gallery</h1>
+
+    <!-- Navigation Buttons -->
+    <div class="space-x-3 mb-8">
+      <a href="#team" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Team Vibes</a>
+      <a href="#creative" class="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600">Creative Campaigns</a>
+      <a href="#fun" class="px-4 py-2 bg-pink-500 text-white rounded hover:bg-pink-600">Work Hard, Play Hard</a>
+      <a href="#bts" class="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600">Behind-the-Scenes</a>
+    </div>
+  </section>
+
+  <!-- Reusable Slideshow Component -->
+  <section class="px-6 pb-12 space-y-12">
+    <!-- Slideshow Sections -->
+    <div id="team" class="text-center">
+      <h2 class="text-2xl font-semibold mb-4">🤝 Team Vibes</h2>
+      <div class="flex justify-center">
+        <div class="relative w-full max-w-md">
+          <img id="team-slide" src="images/team1.jpg" class="rounded-xl mx-auto shadow-lg transition duration-300" />
+          <button onclick="nextSlide('team')" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white px-3 py-1 rounded-full hover:bg-blue-600 shadow">
+            ➡
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="creative" class="text-center">
+      <h2 class="text-2xl font-semibold mb-4">🎨 Creative Campaigns</h2>
+      <div class="flex justify-center">
+        <div class="relative w-full max-w-md">
+          <img id="creative-slide" src="images/creative1.jpg" class="rounded-xl mx-auto shadow-lg transition duration-300" />
+          <button onclick="nextSlide('creative')" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-purple-500 text-white px-3 py-1 rounded-full hover:bg-purple-600 shadow">
+            ➡
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="fun" class="text-center">
+      <h2 class="text-2xl font-semibold mb-4">🥳 Work Hard, Play Hard</h2>
+      <div class="flex justify-center">
+        <div class="relative w-full max-w-md">
+          <img id="fun-slide" src="images/fun1.jpg" class="rounded-xl mx-auto shadow-lg transition duration-300" />
+          <button onclick="nextSlide('fun')" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-pink-500 text-white px-3 py-1 rounded-full hover:bg-pink-600 shadow">
+            ➡
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="bts" class="text-center">
+      <h2 class="text-2xl font-semibold mb-4">🎥 Behind-the-Scenes</h2>
+      <div class="flex justify-center">
+        <div class="relative w-full max-w-md">
+          <img id="bts-slide" src="images/bts1.jpg" class="rounded-xl mx-auto shadow-lg transition duration-300" />
+          <button onclick="nextSlide('bts')" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-yellow-500 text-white px-3 py-1 rounded-full hover:bg-yellow-600 shadow">
+            ➡
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+  <footer class="bg-white bg-opacity-70 text-center py-6 mt-12 shadow-inner">
+  <p class="text-sm text-gray-700">
+    Made with 💛 by Team CollegeTips &middot; © 2025 CollegeTips.in
+  </p>
+  <div class="mt-2 space-x-3">
+    <a href="https://www.instagram.com/collegetips.in" target="_blank" class="text-pink-500 hover:underline">Instagram</a>
+    <a href="https://www.youtube.com/CollegeTips" target="_blank" class="text-red-500 hover:underline">YouTube</a>
+    <a href="https://www.linkedin.com/company/collegetips-in/" target="_blank" class="text-blue-500 hover:underline">LinkedIn</a>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
